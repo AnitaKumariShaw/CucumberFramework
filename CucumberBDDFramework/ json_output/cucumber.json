@@ -1,0 +1,195 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Validate Free CRM login and Home Page Test",
+        "description": "",
+        "id": "free-crm-application-test;validate-free-crm-login-and-home-page-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17802063700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User opens Browser",
+            "match": {
+              "location": "LoginToHomePageSteps.user_opens_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1997887700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username and password",
+            "match": {
+              "location": "LoginToHomePageSteps.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 105936700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks to login button",
+            "match": {
+              "location": "LoginToHomePageSteps.user_clicks_to_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 617211700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate user is on homePage",
+            "match": {
+              "location": "LoginToHomePageSteps.validate_user_is_on_homePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2614404400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate logged in username",
+            "match": {
+              "location": "LoginToHomePageSteps.validate_logged_in_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 354748300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on Contacts link",
+            "match": {
+              "location": "LoginToHomePageSteps.User_clicks_on_Contacts_link()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@LoginTest"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Free CRM Create a new contact scenario",
+        "description": "",
+        "id": "free-crm-application-test;free-crm-create-a-new-contact-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5083501300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user is on contacts page",
+            "match": {
+              "location": "ContactsPageSteps.user_is_on_contacts_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5733708000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks on New Button",
+            "match": {
+              "location": "ContactsPageSteps.user_clicks_on_New_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5105693500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user moves to create new contact page",
+            "match": {
+              "location": "ContactsPageSteps.user_moves_to_create_new_contact_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6872453100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enters \"Tom\" and \"Peter\" and \"Manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tom",
+                  "offset": 13
+                },
+                {
+                  "val": "Peter",
+                  "offset": 23
+                },
+                {
+                  "val": "Manager",
+                  "offset": 35
+                }
+              ],
+              "location": "ContactsPageSteps.user_enters_and_and(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 185292000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "ContactsPageSteps.user_clicks_on_save_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@ContactCreation"
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Application Test",
+    "description": "",
+    "id": "free-crm-application-test",
+    "keyword": "Feature",
+    "uri": "E:/PhotonWS/CucumberBDDFramework/src/test/java/Features/login.feature"
+  }
+]

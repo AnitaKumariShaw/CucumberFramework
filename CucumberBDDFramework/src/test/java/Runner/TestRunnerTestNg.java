@@ -24,7 +24,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 public class TestRunnerTestNg {
 	
-	//testng
+	
 	 private TestNGCucumberRunner testNGCucumberRunner;
 	 
 	    @BeforeClass(alwaysRun = true)
